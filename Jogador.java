@@ -76,13 +76,17 @@ public class Jogador extends Personagem {
             textoPocoes = pocoes + " pocoes de cura";
         }
 
+        System.out.println("===== STATUS DO JOGADOR =====");
         System.out.println("Nome: " + getNome());
+        System.out.println("Nivel: " + getNivel());
+        System.out.println("XP: " + getXp() + " / " + getXpParaProximoNivel());
         System.out.println("Vida: " + getVida());
         System.out.println("Ataque: " + getAtaque());
         System.out.println("Defesa: " + getDefesa());
         System.out.println("Ouro: " + ouro);
         System.out.println("Inventario: " + textoPocoes);
         System.out.println("Posicao: (" + linha + ", " + coluna + ")");
+        System.out.println("=============================");
         System.out.println();
     }
 }
